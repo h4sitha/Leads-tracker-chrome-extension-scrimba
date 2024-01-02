@@ -29,7 +29,9 @@ saveBtn.addEventListener("click", function() {
 })
 
 deleteBtn.addEventListener("click", function() {
-    console.log("Delete Button Clicked");
+    myLeads = [];
+    localStorage.clear();
+    renderLeads();
 })
 
 function renderLeads() {
