@@ -1,5 +1,6 @@
-let inputEl = document.getElementById("input-el");
+const inputEl = document.getElementById("input-el");
 
-let inputBtn = document.getElementById("input-btn");
-let saveBtn = document.getElementById("save-btn");
-let deleteBtn = document.getElementById("delete-btn");
+const inputBtn = document.getElementById("input-btn");
+const saveBtn = document.getElementById("save-btn");
+const deleteBtn = document.getElementById("delete-btn");
+
