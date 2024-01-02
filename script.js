@@ -8,6 +8,7 @@ const deleteBtn = document.getElementById("delete-btn");
 
 const linksContainer = document.getElementById("links-container");
 
+const dataFromLocalStorage = localStorage.getItem("myLeads")
 
 inputBtn.addEventListener("click", function() {
     if (inputEl.value) {
@@ -35,4 +36,5 @@ function renderLeads() {
     }
 
     linksContainer.innerHTML = sentence
+
 }
