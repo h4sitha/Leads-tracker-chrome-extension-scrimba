@@ -25,7 +25,11 @@ inputBtn.addEventListener("click", function() {
 })
 
 saveBtn.addEventListener("click", function() {
-    console.log("Save Button Clicked");
+    chrome.tabs.query({active:true, currentWindow: true}, function(tabs){
+        myLeads.push(tabs[0].url);
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
+        renderLeads();
+    })
 })
 
 deleteBtn.addEventListener("dblclick", function() {
