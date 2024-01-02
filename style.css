@@ -15,13 +15,13 @@ body {
     background-color: rgba(144, 238, 144, 0.368);
     color: rgb(0, 57, 0);
     font-weight: 700;
-    border: 1px solid rgb(0, 118, 0);
+    border: 1px solid rgb(66, 133, 66);
     border-radius: 3px;
     min-width: 400px
 }
 
 #input-el:focus {
-    border: 1px solid rgb(0, 118, 0);
+    border: 1px solid rgb(66, 133, 66);
 }
 
 button {
@@ -29,6 +29,17 @@ button {
     font-weight: 700;
     margin-top: 7px;
     margin-right: 2px;
-    border: 1px solid rgb(0, 118, 0);
+    border: 1px solid rgb(66, 133, 66);
     border-radius: 3px;
+}
+
+#save-btn,
+#input-btn {
+    background: rgb(66, 133, 66);
+    color: rgb(250, 250, 250);
+}
+
+#delete-btn {
+    background-color: rgb(250, 250, 250);
+    color: rgb(66, 133, 66);
 }
