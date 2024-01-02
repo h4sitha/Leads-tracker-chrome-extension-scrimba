@@ -6,6 +6,8 @@ const inputBtn = document.getElementById("input-btn");
 const saveBtn = document.getElementById("save-btn");
 const deleteBtn = document.getElementById("delete-btn");
 
+const linksContainer = document.getElementById("links-container");
+
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
