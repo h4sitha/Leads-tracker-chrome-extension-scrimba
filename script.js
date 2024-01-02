@@ -8,7 +8,7 @@ const deleteBtn = document.getElementById("delete-btn");
 
 
 inputBtn.addEventListener("click", function() {
-    console.log("Input Button Clicked");
+    myLeads.push(inputEl.value);
 })
 
 saveBtn.addEventListener("click", function() {
