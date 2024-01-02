@@ -28,7 +28,7 @@ saveBtn.addEventListener("click", function() {
     console.log("Save Button Clicked");
 })
 
-deleteBtn.addEventListener("click", function() {
+deleteBtn.addEventListener("dblclick", function() {
     myLeads = [];
     localStorage.clear();
     renderLeads();
