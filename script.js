@@ -13,6 +13,7 @@ inputBtn.addEventListener("click", function() {
     if (inputEl.value) {
         myLeads.push(inputEl.value);
         inputEl.value = "";
+        localStorage.setItem("myLeads", myLeads);
         renderLeads();
     }
 })
