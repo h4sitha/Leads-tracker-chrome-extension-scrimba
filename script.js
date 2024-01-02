@@ -10,8 +10,11 @@ const linksContainer = document.getElementById("links-container");
 
 
 inputBtn.addEventListener("click", function() {
-    myLeads.push(inputEl.value);
-    renderLeads()
+    if (inputEl.value) {
+        myLeads.push(inputEl.value);
+        inputEl.value = "";
+        renderLeads();
+    }
 })
 
 saveBtn.addEventListener("click", function() {
