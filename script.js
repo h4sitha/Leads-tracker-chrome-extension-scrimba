@@ -10,6 +10,11 @@ const linksContainer = document.getElementById("links-container");
 
 const dataFromLocalStorage = localStorage.getItem("myLeads")
 
+if (dataFromLocalStorage) {
+    myLeads = dataFromLocalStorage;
+    renderLeads();
+}
+
 inputBtn.addEventListener("click", function() {
     if (inputEl.value) {
         myLeads.push(inputEl.value);
