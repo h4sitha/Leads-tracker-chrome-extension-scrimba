@@ -12,16 +12,17 @@ body {
 #input-el {
     width: 100%;
     padding: 10px 12px;
-    background-color: rgba(144, 238, 144, 0.368);
     color: rgb(0, 57, 0);
-    font-weight: 700;
+    /* font-weight: 700; */
     border: 1px solid rgb(66, 133, 66);
-    border-radius: 3px;
+    /* border-radius: 3px; */
     min-width: 400px
 }
 
 #input-el:focus {
-    border: 1px solid rgb(66, 133, 66);
+    /* border: 1px solid rgb(66, 133, 66); */
+    background-color: rgba(144, 238, 144, 0.2);
+    outline: 0;
 }
 
 button {
@@ -30,7 +31,7 @@ button {
     margin-top: 7px;
     margin-right: 2px;
     border: 1px solid rgb(66, 133, 66);
-    border-radius: 3px;
+    /* border-radius: 3px; */
 }
 
 #save-btn,
