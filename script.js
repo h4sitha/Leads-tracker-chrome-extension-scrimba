@@ -11,6 +11,7 @@ const linksContainer = document.getElementById("links-container");
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
+    renderLeads()
 })
 
 saveBtn.addEventListener("click", function() {
@@ -20,3 +21,14 @@ saveBtn.addEventListener("click", function() {
 deleteBtn.addEventListener("click", function() {
     console.log("Delete Button Clicked");
 })
+
+function renderLeads() {
+    
+    let sentence = "";
+    
+    for (let i=0; i < myLeads.length; i++){
+        sentence += `<li>${myLeads[i]}</li>`
+    }
+
+    linksContainer.innerHTML = sentence
+}
