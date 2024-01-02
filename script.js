@@ -8,7 +8,7 @@ const deleteBtn = document.getElementById("delete-btn");
 
 const linksContainer = document.getElementById("links-container");
 
-const dataFromLocalStorage = localStorage.getItem("myLeads")
+const dataFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
 if (dataFromLocalStorage) {
     myLeads = dataFromLocalStorage;
@@ -19,7 +19,7 @@ inputBtn.addEventListener("click", function() {
     if (inputEl.value) {
         myLeads.push(inputEl.value);
         inputEl.value = "";
-        localStorage.setItem("myLeads", myLeads);
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
         renderLeads();
     }
 })
