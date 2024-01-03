@@ -43,7 +43,7 @@ function renderLeads() {
     let sentence = "";
     
     for (let i=0; i < myLeads.length; i++){
-        sentence += `<li>${myLeads[i]}</li>`
+        sentence += `<li><a href="${myLeads[i]}" target="_blank">${myLeads[i]}</a></li>`
     }
 
     linksContainer.innerHTML = sentence

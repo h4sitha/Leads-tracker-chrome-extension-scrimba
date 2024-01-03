@@ -53,3 +53,7 @@ button {
 #delete-btn:hover {
     background-color: rgb(58, 116, 58, 0.1);
 }
+
+a {
+    color:rgb(58, 116, 58);
+}
